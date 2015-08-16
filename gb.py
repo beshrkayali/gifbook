@@ -44,8 +44,9 @@ class GifBook(object):
 
             compositions = [clip]
 
+            subtitles_y_pos = self._subtitles_position_y
             for line in sub.text.split('\n'):
-                self._subtitles_position_y += 20
+                subtitles_y_pos += 20
 
                 text = (
                     TextClip(line,
@@ -56,7 +57,7 @@ class GifBook(object):
                              font=self.subtitles_font_name)
 
                     .set_pos((self._subtitles_position_x,
-                              self._subtitles_position_y))
+                              subtitles_y_pos))
 
                     .set_duration(clip.duration))
 
