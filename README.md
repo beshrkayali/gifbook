@@ -2,7 +2,35 @@
 Create sequenced Gifs from video clips and subtitles.
 
 
-## Example
+## Prerequisites
+
+Make sure that you have ImageMagick and GhostScript installed:
+
+```bash
+$ brew install ImageMagick
+$ brew install gs
+```
+
+## Installation
+
+```bash
+$ pip install gifbook
+```
+
+## Using `gifbook` as a commandline tool
+
+```bash
+$ gifbook Night.Of.The.Living.Dead.1968.mkv Night.Of.The.Living.Dead.1968.srt --compression 50 --resize 30
+```
+
+More options are available, you can check them out by typing:
+
+```bash
+$ gifbook --help
+```
+
+## Using `gifbook` as a module
+
 
 ```python
 from gb import GifBook
@@ -11,17 +39,9 @@ gb = GifBook('Night.Of.The.Living.Dead.1968.720p.mkv', '~/Desktop/gifs/')
 
 gb.set_subtitles(
     "Night.Of.The.Living.Dead.1968.720p.srt",
-
-    subtitles_config={
-        'font_size': 26,
-        'font_name': 'Helvetica',
-        'stroke_width': 2.1,
-        'stroke_color': 'grey',
-        'position_y': 300
-    }
 )
 
-gb.generate(resize=0.6)
+gb.generate(resize=0.5, compression=30)
 ```
 
 ## Demo Gifs
@@ -32,15 +52,6 @@ gb.generate(resize=0.6)
 ![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_3.gif)
 ![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_4.gif)
 
-
-## Prerequisites
-
-Make sure that you have ImageMagick and GhostScript installed:
-
-```bash
-$ brew install ImageMagick
-$ brew install gs
-```
 
 
 ## License
