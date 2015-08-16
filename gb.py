@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-GifBook: Create sequenced Gifs from video clips and clips and subtitles
+GifBook: Create sequenced Gifs from video clips and subtitles
 """
 
 __author__ = "Beshr Kayali"
