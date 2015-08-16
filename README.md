@@ -17,7 +17,7 @@ $ brew install gs
 $ pip install gifbook
 ```
 
-## Using `gifbook` as a commandline tool
+## Using `gifbook` as a command line tool
 
 ```bash
 $ gifbook Night.Of.The.Living.Dead.1968.mkv Night.Of.The.Living.Dead.1968.srt --compression 50 --resize 30
