@@ -1,6 +1,5 @@
 from pip.req import parse_requirements
 from setuptools import setup
-# from distutils.core import setup
 
 install_reqs = parse_requirements('requirements.txt')
 
