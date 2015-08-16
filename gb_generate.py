@@ -1,5 +1,6 @@
 from gb import GifBook
 import click
+import os
 
 
 @click.command()
@@ -40,10 +41,12 @@ def cli(video_file,
         resize,
         compression):
     """Generates sequenced Gifs from video clips and SubRip (.srt) subtitle files"""
-    gb = GifBook(
-        video_file,  # 'Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv',
-        out_dir
-    )  # '~/Desktop/gifs/')
+
+    if not os.path.exists(out_dir):
+        os.mkdir(out_dir)
+
+    gb = GifBook(video_file, out_dir)
+
     gb.set_subtitles(
         subtitles_file,  # "Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.srt",
         subtitles_config={
