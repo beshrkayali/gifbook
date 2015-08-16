@@ -1,5 +1,5 @@
 # Gif Book
-Create sequenced Gifs from video clips and clips and subtitles
+Create sequenced Gifs from video clips and subtitles.
 
 
 ## License
