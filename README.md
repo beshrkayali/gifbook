@@ -46,11 +46,12 @@ gb.generate(resize=0.5, compression=30)
 
 ## Demo Gifs
 
-![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_0.gif)
-![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_1.gif)
-![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_2.gif)
-![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_3.gif)
-![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_4.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_50.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_51.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_52.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_53.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_54.gif)
+![](../master/demo/Night.Of.The.Living.Dead.1968.720p.BRRip.x264-x0r.mkv_55.gif)
 
 
 
