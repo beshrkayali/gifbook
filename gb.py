@@ -22,7 +22,8 @@ class GifBook(object):
         self._clip = VideoFileClip(clip)
         self._output_dir = output_dir
 
-    def generate(self, start_sub=None, end_sub=None, resize=.5, compression=20):
+    def generate(self,
+                 start_sub=None, end_sub=None, resize=.5, compression=20):
         subs = pysrt.open(self._subtitles_file)
 
         for iter_, sub in enumerate(subs, start_sub if start_sub else 0):
@@ -82,7 +83,7 @@ class GifBook(object):
             'color', 'white')
 
         self._subtitles_background_color = subtitles_config.get(
-            'bg-color', 'black')
+            'bg_color', 'black')
 
         self._subtitles_font_name = subtitles_config.get(
             'font_name', 'Times-Roman')
@@ -114,7 +115,6 @@ class GifBook(object):
     @property
     def subtitles_background_color(self):
         return self._subtitles_background_color
-    
 
     @property
     def subtitles_stroke_width(self):
