@@ -10,6 +10,7 @@ __version__ = "0.0.1"
 __email__ = "me@beshr.com"
 __status__ = "Prototype"
 
+import os
 
 import pysrt
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
@@ -30,11 +31,12 @@ class GifBook(object):
             if end_sub and iter_ > end_sub:
                 break
 
-            gif_file_name = '{dir}/{clip}_{iter}.gif'.format(
-                dir=self._output_dir,
-                clip=self._clip_file,
-                iter=iter_
-            )
+            gif_file_name = os.path.join(
+                self._output_dir,
+                '{clip}_{iter}.gif'.format(
+                    clip=self._clip_file,
+                    iter=iter_
+                ))
 
             clip = (
                 self._clip
