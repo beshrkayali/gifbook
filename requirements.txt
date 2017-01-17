@@ -1,4 +1,4 @@
-Pillow==2.9.0
+Pillow==4.0.0
 chardet==2.3.0
 click==4.1
 decorator==4.0.11
