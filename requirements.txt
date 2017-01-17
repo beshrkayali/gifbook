@@ -1,7 +1,7 @@
 Pillow==2.9.0
 chardet==2.3.0
 click==4.1
-decorator==4.0.2
+decorator==4.0.11
 imageio==2.1.1
 moviepy==0.2.2.11
 numpy==1.9.2
