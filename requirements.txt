@@ -6,5 +6,5 @@ imageio==2.1.1
 moviepy==0.2.2.13
 numpy==1.12.0
 pysrt==1.1.1
-tqdm==4.11.2
+tqdm==4.19.1.post1
 wsgiref==0.1.2
