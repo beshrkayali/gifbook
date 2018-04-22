@@ -3,7 +3,7 @@ chardet==2.3.0
 click==6.7
 decorator==4.2.1
 imageio==2.1.1
-moviepy==0.2.2.13
+moviepy==0.2.3.4
 numpy==1.14.0
 pysrt==1.1.1
 tqdm==4.20.0
